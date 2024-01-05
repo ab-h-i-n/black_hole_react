@@ -16,11 +16,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/black_hole_react' Component={LOGIN} name="login"/>
-          <Route path='/home' Component={HOME} name="home"/>
-          <Route path='/topcharts' Component={TOPCHARTS} name="topcharts"/>
-          <Route path='/youtube' Component={YOUTUBE}/>
-          <Route path='/library' Component={LIBRARY}/>
-          <Route path="/:title" Component={SONGPLAY} />
+          <Route path='/black_hole_react/home' Component={HOME} name="home"/>
+          <Route path='/black_hole_react/topcharts' Component={TOPCHARTS} name="topcharts"/>
+          <Route path='/black_hole_react/youtube' Component={YOUTUBE}/>
+          <Route path='/black_hole_react/library' Component={LIBRARY}/>
+          <Route path="/black_hole_react/:title" Component={SONGPLAY} />
         </Routes>
       </BrowserRouter>
       
