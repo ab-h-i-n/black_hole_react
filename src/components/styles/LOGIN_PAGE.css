@@ -1,0 +1,60 @@
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+}
+
+.login-header{
+
+    margin-top: 30%;
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--GREEN-COLOR);
+}
+.login-header .white{
+    color: white;
+}
+.others{
+    margin-top: 4rem;
+    width: 100%;
+    height: auto;
+}
+
+.usrName{
+    background-color: rgb(39, 39, 39);
+    padding: 0 .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+.person-icon{
+    color: var(--GREEN-COLOR);
+}
+.usrName input{
+    padding: 1rem .5rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: rgb(136, 136, 136);
+}
+.usrName input:focus{
+    outline: none;
+    color: white;
+}
+.get-started{
+    padding: 1rem .5rem;
+    width: 100%;
+    background-color: var(--GREEN-COLOR);
+    border-radius: 10px;
+    margin-top: 10px;
+    display: grid;
+    place-content: center;
+    color: black;
+    cursor: default;
+}
+.disclaimer{
+    color : rgba(255, 255, 255, 0.329);
+    font-size: .7rem;
+    margin-top: 15px;
+}

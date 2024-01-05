@@ -1,0 +1,67 @@
+.audio-container{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+}
+.audio-player {
+  width: 100%;
+  height: 100%;
+  padding: 1.8rem;
+
+}
+.timeline{
+  width: 100%;
+  height: 5px;
+  background-color: rgb(58, 58, 58);
+  border-radius: 5px;
+  margin-top:2rem;
+}
+.progress{
+  background-color: white;
+  height: 100%;
+  border-radius: 5px;
+  position: relative;
+  width: 0;
+}
+.progress-cirlce{
+  background-color:white;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.time{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.time .current,
+.time .length{
+  color: white;
+  font-size: .9rem;
+  margin-top: .5rem;
+}
+.play-container{
+  background-color: rgb(0, 0, 0);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.toggle-play{
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-content: center;
+}
+.toggle-play .icon{
+  width: 70px;
+  height: 70px;
+  color: white;
+}

@@ -1,0 +1,20 @@
+.card{
+    height: auto;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+/* .card-image{
+    background-color: red;
+} */
+.card-image,
+.card-image img{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+.card-title{
+    color: white;
+    font-size: 1.1rem;
+}

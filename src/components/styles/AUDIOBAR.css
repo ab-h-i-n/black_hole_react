@@ -1,0 +1,32 @@
+.audiobar-container{
+    position: fixed;
+    background: linear-gradient(90deg, rgb(53, 53, 53) ,rgb(14, 14, 14) 70%);
+    width: 100%;
+    height: 70px;
+    bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.audio-details{
+    display: flex;
+    align-items: center;
+}
+.audio-img{
+    width: 70px;
+    height: 70px;
+}
+.audio-title{
+    color: white;
+    font-size: 2rem;
+    margin-left: 2rem;
+
+}
+.audiobar-container .play-container,
+.audiobar-container .play-container .toggle-play,
+.audiobar-container .play-container .toggle-play .icon{
+    width: 40px;
+    height: 40px;
+    position: static
+}
