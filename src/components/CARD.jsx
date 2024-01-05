@@ -10,7 +10,7 @@ class CARD extends Component {
 
     return (
       <div>
-        <Link to={`/${title}`} className="card-link">
+        <Link to={`/black_hole_react/${title}`} className="card-link">
           <div className="card" id={title}>
             <div className="card-image">
               <img src={srcUrl} alt={title} />

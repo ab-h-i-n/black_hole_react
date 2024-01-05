@@ -14,7 +14,7 @@ class Nav extends Component {
     return (
       <nav>
         {labels.map((label, index) => (
-          <Link key={index} to={`/${label.toLowerCase().replace(/\s/g, '')}`}>
+          <Link key={index} to={`/black_hole_react/${label.toLowerCase().replace(/\s/g, '')}`}>
             <div className={`nav-items ${index === indexNumber ? 'active' : ''}`}>
               {React.createElement([Home, TrendingUp, YouTube, LibraryMusic][index])}
               <div className="nav-item-name">{label}</div>

@@ -22,7 +22,7 @@ function AUDIOBAR() {
     <div>
       {isPlaying ? 
         <div className="audiobar-container">
-          <Link to={`/${song.title}`} className="card-link">
+          <Link to={`/black_hole_react/${song.title}`} className="card-link">
             <div className="audio-details">
               <img src={song.imgSrc} className='audio-img' alt={`Album cover for ${song.title}`} />
               <div className="audio-title">

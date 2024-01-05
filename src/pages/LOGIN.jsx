@@ -32,7 +32,7 @@ const LOGIN = () => {
                     <input type="text" id="usrName" name="usrName" placeholder="Enter Your Name" value={userName} />
                 </div>
                 {/* Handle logic before navigating */}
-                <Link to={`/home`} onClick={handleGetStarted}>
+                <Link to={`/black_hole_react/home`} onClick={handleGetStarted}>
                     <div className="get-started">Get Started</div>
                 </Link>
                 <p className="disclaimer">
