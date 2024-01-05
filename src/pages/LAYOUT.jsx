@@ -1,7 +1,7 @@
 import React from 'react';
 import NAV from '../components/NAV';
 import MENU from '../components/MENU'
-import AUDIOBAR from './AUDIOBAR';
+import AUDIOBAR from '../components/AUDIOBAR';
 
 const Layout = ({ children,index }) => {
   return (

@@ -9,7 +9,7 @@ const LOGIN = () => {
     const handleGetStarted = () => {
         const newUserName = document.getElementById('usrName').value;
         
-        // Assuming you set the user's name in the state
+        // Set the user's name in the state
         setUserName(newUserName);
     
         // Store the user's name in local storage
@@ -17,7 +17,6 @@ const LOGIN = () => {
     
         // Perform any other logic you need before navigating
     };
-    
 
     return (
         <div className="main-login">
@@ -29,7 +28,8 @@ const LOGIN = () => {
             <div className="others">
                 <div className="usrName">
                     <Person className="person-icon" />
-                    <input type="text" id="usrName" name="usrName" placeholder="Enter Your Name" />
+                    {/* Use the userName state to set the input's value */}
+                    <input type="text" id="usrName" name="usrName" placeholder="Enter Your Name" value={userName} />
                 </div>
                 {/* Handle logic before navigating */}
                 <Link to={`/home`} onClick={handleGetStarted}>

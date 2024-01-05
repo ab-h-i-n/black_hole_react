@@ -7,7 +7,6 @@ import LOGIN from './pages/LOGIN';
 import SONGPLAY from './components/SONGPLAY';
 import LIBRARY from './pages/LIBRARY';
 import YOUTUBE from './pages/YOUTUBE';
-import { YouTube } from '@mui/icons-material';
 
 function App() {
 
@@ -16,7 +15,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/' Component={LOGIN} name="login"/>
+          <Route path='/black_hole_react' Component={LOGIN} name="login"/>
           <Route path='/home' Component={HOME} name="home"/>
           <Route path='/topcharts' Component={TOPCHARTS} name="topcharts"/>
           <Route path='/youtube' Component={YOUTUBE}/>

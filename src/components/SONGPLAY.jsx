@@ -12,6 +12,11 @@ function SONGPLAY() {
 
   const songData = songs.find(song => song.title === title);
 
+  // Check if songData is undefined before accessing its properties
+  if (!songData) {
+    return <div>Error: Song not found</div>;
+  }
+
   const handlePlayPause = () => {
     setSongs(prevSongs =>
       prevSongs.map(song =>
