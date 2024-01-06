@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams , useNavigate } from 'react-router-dom';
 import SONGS from './Songs';
-import { Link } from 'react-router-dom';
 import { ArrowBackIos } from '@mui/icons-material';
 import './styles/SONGPLAY.css';
 import AUDIOPLAYER from './AUDIOPLAYER';
 
-function SONGPLAY() {
+const SONGPLAY = () => {
   const { title } = useParams();
+  const navigate = useNavigate();
   const [songs, setSongs] = useState(SONGS);
 
   const songData = songs.find(song => song.title === title);
@@ -24,10 +24,10 @@ function SONGPLAY() {
       )
     );
   };
-
+  
   return (
     <div className='song-main'>
-      <Link to={`/home`}><ArrowBackIos className='back-btn'/></Link>
+      <ArrowBackIos className='back-btn' onClick={() => navigate(-1)}/>
       <div className="song-image-container">
         <img src={songData.imgSrc} className='song-image' alt={songData.title} />
       </div>
